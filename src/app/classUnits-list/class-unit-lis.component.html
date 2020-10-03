@@ -1,0 +1,11 @@
+<p>class-unit-lis works!</p>
+<div>
+
+<div *ngFor = 'let item of classUnits'>
+    <p>{{item.id}}.{{item.name}}</p>
+    <button routerLink = "classUnits-edit/{{item.id}}"> Edit</button>
+    <button (click) = "delete(item.id)"> Delete </button>
+    <button click = "showClasses()"> Show Classes</button>
+</div>
+
+</div>
