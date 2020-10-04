@@ -9,10 +9,10 @@ import{ClassService} from '../class.service';
   styleUrls: ['./class-edit.component.css']
 })
 export class ClassEditComponent implements OnInit {
-classData: ClassData= new ClassData();
+classData: ClassData = new ClassData();
 
-  constructor(private activateRoutes: ActivatedRoute, private classService: ClassService) { }
-  private route : Router;
+  constructor(private activateRoutes: ActivatedRoute, private classService: ClassService, private route : Router) { }
+  
 
   ngOnInit(): void {
     let id = this.activateRoutes.snapshot.paramMap.get("id");

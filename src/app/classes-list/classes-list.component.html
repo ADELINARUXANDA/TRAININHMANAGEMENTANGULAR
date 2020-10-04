@@ -1,8 +1,12 @@
-<p>classes-list works!</p>
 <div>
-<div *hgFor ='let item of class'>
-  <p> {{item.id}}.{{item.subject}}.{{item.date}}</p>
+<p>classes-list </p>
+
+<div *ngFor ='let item of classes'>
+  <p> {{item.id}}.{{item.subject}}</p>
   <button routerLink ="class-edit/{{item.id}}"> Edit</button>
-  <button (click) = "delete(item.id)"> Delete</button>
+<button (click) = "delete(item.id)"> Delete</button>
+ 
 </div>
 </div>
+
+

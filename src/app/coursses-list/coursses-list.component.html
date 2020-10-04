@@ -1,12 +1,15 @@
 <p>coursses-list works!</p>
 <div>
-    <button routerLink="coursses-add"> Add courss</button>
+    
 
     <div *ngFor = 'let item of coursses'>
-        <p> {{item.id}}.{{item.name}}
-        <button routerLink = "coursses-edit/{{item}}"> Edit</button>
-        <button click = "delete(item.id)"> Delete </button>
-        <button click = "showClassUnits()"> Show ClassUnits</button>
-</p>
+        <p> {{item.id}}.{{item.name}}</p>
+       <button routerLink = "coursses-edit/{{item.id}}"> Edit</button>
+     <button click = "delete(item.id)"> Delete </button>
+        <button routerLink = "ClassUnits-list"> Show ClassUnits </button>
+
     </div>
+    <button routerLink="course-add"> Add course</button>
 </div>
+
+

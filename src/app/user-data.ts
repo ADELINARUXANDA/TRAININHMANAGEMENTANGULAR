@@ -2,7 +2,7 @@ import { CompileTypeMetadata } from '@angular/compiler';
 import { UserNotificationData } from "./userNotification-data";
 
 import {TypeData} from './type-data'
-import {CourssesData} from './coursses-data'
+import {CourseData} from './course-data'
 export class UserData{
 
  id: number;
@@ -13,5 +13,5 @@ export class UserData{
     active_status: string;
      userNotification: UserNotificationData;
      type: TypeData;
-    course: CourssesData;
+    course: CourseData;
 }

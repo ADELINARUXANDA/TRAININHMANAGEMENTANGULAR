@@ -1,7 +1,7 @@
 import { ClassData } from './class-data';
 
-export class ClassUnitsData{
+export class ClassUnitData{
     id: number;
     name:string;
-    classList: ClassData[];
+    //classList: ClassData[];
 }

@@ -8,7 +8,8 @@ import {ClassService} from '../class.service'
   styleUrls: ['./classes-list.component.css']
 })
 export class ClassesListComponent implements OnInit {
-classes: ClassData[]= []
+classes: ClassData[]= [];
+
   constructor(private classService: ClassService) { }
 
   ngOnInit(): void {

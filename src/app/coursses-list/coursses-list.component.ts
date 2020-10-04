@@ -1,9 +1,9 @@
 import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
-import {CourssesData} from '../coursses-data';
-import {CourssesService} from '../coursses.service';
-import {ClassUnitsService} from '../classUnits.service';
-import { ClassUnitsData } from '../classUnits-data';
+import {CourseData} from '../course-data';
+import {CourseService} from '../course.service';
+import {ClassUnitService} from '../classUnit.service';
+import { ClassUnitData } from '../classUnit-data';
 
 
 @Component({
@@ -12,10 +12,10 @@ import { ClassUnitsData } from '../classUnits-data';
   styleUrls: ['./coursses-list.component.css']
 })
 export class CourssesListComponent implements OnInit {
-coursses: CourssesData[] = []
-classUnits: ClassUnitsData[] =[]
+coursses: CourseData[] = [];
 
-  constructor(private courssesService: CourssesService, private classUnitsService: ClassUnitsService) { }
+
+  constructor(private courssesService: CourseService) { }
 
   ngOnInit(): void {
     
@@ -35,10 +35,4 @@ delete(id: number){
 
 }
 
-showClassUnits(){
-  this.classUnitsService.getClassesUnits().subscribe(receivedClassUnits =>
-    {
-      this.classUnits = receivedClassUnits;
-    })
-}
 }

@@ -1,28 +1,28 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {ClassUnitsData} from './classUnits-data';
+import {ClassUnitData} from './classUnit-data';
 import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClassUnitsService {
+export class ClassUnitService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getClassesUnits():Observable<ClassUnitsData[]>{
-    return this.httpClient.get<ClassUnitsData[]>('http://localhost:8080/findClassesUnits');
+  public getClassesUnits():Observable<ClassUnitData[]>{
+    return this.httpClient.get<ClassUnitData[]>('http://localhost:8080/findClassesUnits');
     
     }
 
-    public addClassUnit(classUnitData: ClassUnitsData): Observable<any>{
+    public addClassUnit(classUnitData: ClassUnitData): Observable<any>{
       return this.httpClient.post<any>('http://localhost:8080/addClassUnit', classUnitData);
     }
 
-    public getClassUnit(id: number): Observable<ClassUnitsData>{
-      return this.httpClient.get<ClassUnitsData>('http://localhost:8080/getClassUnit/'+ id);
+    public getClassUnit(id: number): Observable<ClassUnitData>{
+      return this.httpClient.get<ClassUnitData>('http://localhost:8080/getClassUnit/'+ id);
     }
-    public editClassUnit(classUnitData: ClassUnitsData): Observable<any>{
+    public editClassUnit(classUnitData: ClassUnitData): Observable<any>{
       return this.httpClient.put<any>('http://localhost:8080/addClassUnit', classUnitData);
     }
     public deleteClassUnit(id: number) : Observable<any>{

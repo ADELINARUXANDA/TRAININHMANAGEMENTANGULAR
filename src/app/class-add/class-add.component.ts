@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClassData } from '../class-data';
 import { ClassService } from '../class.service';
-import {Router} from '@angular/router'
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-class-add',
   templateUrl: './class-add.component.html',
@@ -18,7 +18,7 @@ public addClass(): void {
 this.classService.addClass(this.classData).subscribe(result =>
   {
     console.log("Class added");
-    this.router.navigateByUrl("");
+    this.router.navigateByUrl(" ");
   })
   
 }

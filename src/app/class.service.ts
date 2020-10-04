@@ -15,7 +15,7 @@ export class ClassService {
     
     }
     public addClass(classData: ClassData): Observable<any>{
-      return this.httpClient.post<any>('http://localhost:8080/addCourse', classData);
+      return this.httpClient.post<any>('http://localhost:8080/addClass', classData);
     }
     public getClass(id: number): Observable<ClassData>{
       return this.httpClient.get<ClassData>('http://localhost:8080/findClassById/'+ id);

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassUnitLisComponent } from './class-unit-lis.component';
+import { ClassUnitEditComponent } from './classUnit-edit.component';
 
-describe('ClassUnitLisComponent', () => {
-  let component: ClassUnitLisComponent;
-  let fixture: ComponentFixture<ClassUnitLisComponent>;
+describe('ClassUnitEditComponent', () => {
+  let component: ClassUnitEditComponent;
+  let fixture: ComponentFixture<ClassUnitEditComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClassUnitLisComponent ]
+      declarations: [ ClassUnitEditComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClassUnitLisComponent);
+    fixture = TestBed.createComponent(ClassUnitEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

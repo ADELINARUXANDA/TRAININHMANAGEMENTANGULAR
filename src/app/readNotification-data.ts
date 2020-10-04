@@ -1,6 +1,6 @@
-import {ClassUnitsData} from './classUnits-data';
+import {ClassUnitData} from './classUnit-data';
 export class ReadNotificationData{
     id:number;
     data:Date;
-    unitClass: ClassUnitsData;
+    unitClass: ClassUnitData;
 }

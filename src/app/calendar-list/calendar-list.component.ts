@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ClassUnitsData } from '../classUnits-data';
+import { ClassUnitData } from '../classUnit-data';
 import{ClassService} from '../class.service';
-import { ClassUnitsService } from '../classUnits.service';
+import { ClassUnitService } from '../classUnit.service';
 
 @Component({
   selector: 'app-calendar-list',
@@ -9,8 +9,8 @@ import { ClassUnitsService } from '../classUnits.service';
   styleUrls: ['./calendar-list.component.css']
 })
 export class CalendarListComponent implements OnInit {
-  classUnits : ClassUnitsData[] = []
-  constructor(private classUnitsService: ClassUnitsService) { }
+  classUnits : ClassUnitData[] = []
+  constructor(private classUnitsService: ClassUnitService) { }
 
   ngOnInit(): void {
   }

@@ -1,28 +1,32 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CalendarListComponent } from './calendar-list/calendar-list.component';
-import { ClassAddComponent } from './class-add/class-add.component';
-import { ClassEditComponent } from './class-edit/class-edit.component';
-import { ClassUnitAddComponent } from './class-unit-add/class-unit-add.component';
-import { ClassUnitsEditComponent } from './class-units-edit/class-units-edit.component';
-import { ClassesListComponent } from './classes-list/classes-list.component';
-import { ClassUnitLisComponent } from './classUnits-list/class-unit-lis.component';
-import { CourssesAddComponent } from './coursses-add/coursses-add.component';
-import { CourssesEditComponent } from './coursses-edit/coursses-edit.component';
-import { CourssesListComponent } from './coursses-list/coursses-list.component';
-import { NotificationsListComponent } from './notifications-list/notifications-list.component';
+import {AppComponent} from './app.component';
+import{CourssesListComponent} from './coursses-list/coursses-list.component';
+import{CourseAddComponent} from'./course-add/course-add.component';
+import{CourseEditComponent} from './course-edit/course-edit.component';
+import{ClassUnitsListComponent} from './classUnits-list/classUnits-list.component';
+import{ClassUnitAddComponent} from './classUnit-add/classUnit-add.component';
+import{ClassUnitEditComponent} from './classUnit-edit/classUnit-edit.component';
+import {ClassesListComponent} from './classes-list/classes-list.component';
+import{ClassAddComponent} from './class-add/class-add.component';
+import{ClassEditComponent} from './class-edit/class-edit.component';
+import{NotificationsListComponent} from './notifications-list/notifications-list.component';
+import{CalendarListComponent} from './calendar-list/calendar-list.component';
+import{HttpClientModule} from '@angular/common/http';
+
+
 
 
 const routes: Routes = [
   {path: '' , component : CourssesListComponent },
-  {path: 'coursses-add', component: CourssesAddComponent},
-  {path: 'coursses-edit/:id', component: CourssesEditComponent},
-  {path: 'classUnits-list', component: ClassUnitLisComponent},
+  {path: 'course-add', component: CourseAddComponent},
+  {path: 'course-edit/:id', component: CourseEditComponent},
+  {path: 'classUnits-list', component: ClassUnitsListComponent},
   {path: 'classUnit-add', component: ClassUnitAddComponent},
-  {path: 'classUnits-edit', component: ClassUnitsEditComponent},
+  {path: 'classUnit-edit/:id', component: ClassUnitEditComponent},
   {path: "classes-list", component: ClassesListComponent},
   {path: "class-add", component: ClassAddComponent},
-  {path: "class-edit", component: ClassEditComponent},
+  {path: "class-edit/:id", component: ClassEditComponent},
   {path: "notifications-list", component: NotificationsListComponent},
   {path: "calendar-list", component:CalendarListComponent}
   
