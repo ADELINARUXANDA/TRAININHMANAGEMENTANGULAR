@@ -28,7 +28,7 @@ classUnitData: ClassUnitData = new ClassUnitData();
       {
 
    console.log(this.classUnitData);
-   this.route.navigateByUrl("");
+   this.route.navigateByUrl("classUnits-list");
   });
 }
 }

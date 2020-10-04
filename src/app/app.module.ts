@@ -16,6 +16,8 @@ import{CalendarListComponent} from './calendar-list/calendar-list.component';
 import{HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import{ClassUnitEditComponent} from './classUnit-edit/classUnit-edit.component';
+import { AssignClassUnitComponent } from './assignClassUnit/assignClassUnit.component';
+import { AssignClassUnitAsignComponent } from './assign-class-unit-asign/assign-class-unit-asign.component';
 
 
 
@@ -32,7 +34,9 @@ import{ClassUnitEditComponent} from './classUnit-edit/classUnit-edit.component';
     ClassAddComponent,
     ClassEditComponent,
     NotificationsListComponent,
-    CalendarListComponent
+    CalendarListComponent,
+    AssignClassUnitComponent,
+    AssignClassUnitAsignComponent
   ],
   imports: [
   

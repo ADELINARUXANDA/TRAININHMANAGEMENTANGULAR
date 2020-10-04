@@ -5,8 +5,9 @@
     <div *ngFor = 'let item of coursses'>
         <p> {{item.id}}.{{item.name}}</p>
        <button routerLink = "course-edit/{{item.id}}"> Edit</button>
-     <button click = "delete(item.id)"> Delete </button>
-        <button routerLink = "ClassUnits-list"> Show ClassUnits </button>
+     <button (click) = "delete(item.id)"> Delete </button>
+        <button routerLink = "classUnits-list"> Show ClassUnits </button>
+        <button routerLink = "assignClassUnit/{{item.id}}">Assign classUnit</button>
 
     </div>
     <button routerLink="course-add"> Add course</button>

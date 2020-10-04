@@ -13,6 +13,7 @@ import{ClassEditComponent} from './class-edit/class-edit.component';
 import{NotificationsListComponent} from './notifications-list/notifications-list.component';
 import{CalendarListComponent} from './calendar-list/calendar-list.component';
 import{HttpClientModule} from '@angular/common/http';
+import { AssignClassUnitComponent } from './assignClassUnit/assignClassUnit.component';
 
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: "class-add", component: ClassAddComponent},
   {path: "class-edit/:id", component: ClassEditComponent},
   {path: "notifications-list", component: NotificationsListComponent},
-  {path: "calendar-list", component:CalendarListComponent}
+  {path: "calendar-list", component:CalendarListComponent},
+  {path: "assignClassUnit", component:AssignClassUnitComponent}
   
   ];
 

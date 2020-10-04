@@ -20,6 +20,6 @@ public classUnitData: ClassUnitData = new ClassUnitData();
     this.classUnitsService.addClassUnit(this.classUnitData).subscribe(results =>
       {
     console.log("classUnit added");
-    this.router.navigateByUrl("");
+    this.router.navigateByUrl("classUnits-list");
   });
 }}

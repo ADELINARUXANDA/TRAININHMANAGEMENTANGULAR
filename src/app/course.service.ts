@@ -31,4 +31,8 @@ public deleteCourse(id: number) : Observable<any>{
   return this.httpClient.delete<any>('http://localhost:8080/deleteCourse/'+ id);
 }
 
+public asociationClassUnitACourse(idCourse: number, idClassUnit: number): Observable<any>{
+   return this.httpClient.put<any>('http://localhost:8080/asociationClassUnitACourse', + idCourse / + idClassUnit);
+
+}
 }

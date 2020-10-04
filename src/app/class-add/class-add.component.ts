@@ -18,7 +18,7 @@ public addClass(): void {
 this.classService.addClass(this.classData).subscribe(result =>
   {
     console.log("Class added");
-    this.router.navigateByUrl(" ");
+    this.router.navigateByUrl(" classes-list");
   })
   
 }

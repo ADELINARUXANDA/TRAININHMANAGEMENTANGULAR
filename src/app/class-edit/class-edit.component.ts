@@ -26,7 +26,7 @@ classData: ClassData = new ClassData();
   editClass(): void {
     this.classService.editClass(this.classData).subscribe(result => {
       console.log(this.classData);
-      this.route.navigateByUrl("");
+      this.route.navigateByUrl("classes-list");
     })
 
     

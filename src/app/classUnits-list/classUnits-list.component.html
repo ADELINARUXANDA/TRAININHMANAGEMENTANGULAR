@@ -3,9 +3,9 @@
 
 <div *ngFor = 'let item of classUnits'>
     <p>{{item.id}}.{{item.name}}</p>
-    <button routerLink = "classUnit-edit/{{item.id}}"> Edit</button>
+    <button routerLink = "/classUnit-edit/{{item.id}}"> Edit</button>
     <button (click) = "delete(item.id)"> Delete </button>
-    <button routerLink = "Classes-list"> Show Classes </button>
+    <button routerLink = "/Classes-list"> Show Classes </button>
 </div>
-
+<button routerLink="classUnit-add"> Add classUnit</button>
 </div>

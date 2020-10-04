@@ -19,7 +19,7 @@ public addCourse(): void {
 this.courssesService.addCourse(this.courseData).subscribe(result => 
   {
   console.log("Course added");
-  this.router.navigateByUrl("");
+  this.router.navigateByUrl("coursses-list");
 
 });
 }
